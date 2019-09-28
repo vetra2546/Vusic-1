@@ -1,0 +1,21 @@
+.center {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a181c;
+}
+
+.VideoHeader {
+  background-image: url('src\\Images\\VideoHeader.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.MusicHeader {
+  background-image: url('src\\Images\\MusicHeader.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}

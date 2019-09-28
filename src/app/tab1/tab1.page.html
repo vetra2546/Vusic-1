@@ -1,0 +1,40 @@
+<ion-content fullscreen>
+  <div id="backgroundOverlay"></div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="ContentSlide1">  
+  </div>
+<div>
+  <div id="content">
+    <input type="file" id="thefile" accept="audio/*" />
+    <canvas id="canvas"></canvas>
+    <video controls autoplay id="playerBoxVideo">
+      <source id="AudioSrc" type="audio/webm">
+    </video>
+    <iframe width="300px" height="400px" style="z-index:2000" src="https://r6---sn-gwpa-jj0l.googlevideo.com/videoplayback?expire=1567197209&ei=uTNpXb2WKsWRgQO2spiYDQ&ip=47.8.250.210&id=o-AG45PvT-M4QUn9DyjTt4HwYyJjy-amJCcp_CvS-juua1&itag=251&source=youtube&requiressl=yes&mm=31%2C29&mn=sn-gwpa-jj0l%2Csn-qxaeen7l&ms=au%2Crdu&mv=m&mvi=5&pl=18&initcwndbps=88750&mime=audio%2Fwebm&gir=yes&clen=4603414&dur=269.801&lmt=1540279328882590&mt=1567175516&fvip=1&keepalive=yes&c=WEB&txp=5511222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHylml4wRQIgVDXkV36Hq51owTukvyI67V96AzAjOXrhzRoZE3DgxUwCIQCpkfb-rn98v8W8bb6DGmDkbabUA3rFwby3eOw8c_H1RQ%3D%3D&sig=ALgxI2wwRQIhAJ9fryI3ttezufN0zSpK-AnDdtSMQmdty36VlLLNn1qJAiBREkzSAieP4biMIr8-evrb_-qrPTPqJ0ehA_zoojiQng==&ratebypass=yes"></iframe>
+  </div>
+  <div id="playerBox">  
+    <div class="bottomAlign">
+    <ion-fab horizontal="start" vertical="top" slot="fixed" id="FabButton">
+      <ion-fab-button color="secondary" style="visibility: hidden;"></ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-fab-button color="light">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-icon name="logo-vimeo"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-icon name="logo-google"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+    </div>
+    <div class="player">
+      <button class="insideDocu" onclick="document.getElementById('FabButton').click()"></button>
+    </div>
+  </div>
+</div>
+</ion-content>

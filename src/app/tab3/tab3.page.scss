@@ -1,0 +1,269 @@
+.flip-box {
+  background-color: transparent;
+  width: 20%;
+  height: 15%;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: rgb(161, 29, 29);
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-top {
+  background-color: transparent;
+  width: 30%;
+  height: 15%;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px;
+  position: relative;
+  left: 40%;
+}
+
+.flip-box-top-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-top:hover .flip-box-top-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-top-front,
+.flip-box-top-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-top-front {
+  background-color: rgb(117, 58, 255);
+  color: black;
+}
+
+.flip-box-top-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.flip-box-wide-top {
+  background-color: transparent;
+  width: 26%;
+  height: 30.5%;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px;
+  position: relative;
+}
+
+.flip-box-wide-top-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-wide-top:hover .flip-box-wide-top-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-wide-top-front,
+.flip-box-wide-top-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-wide-top-front {
+  background-color: rgb(0, 112, 0);
+  color: black;
+}
+
+.flip-box-wide-top-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-small {
+  background-color: transparent;
+  width: 7.5%;
+  height: 15%;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px;
+  position: relative;
+  left: 80%;
+}
+
+.flip-box-small-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-box-small:hover .flip-box-small-inner {
+  transform: rotateX(-180deg);
+}
+
+.flip-box-small-front,
+.flip-box-small-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-small-front {
+  background-color: rgb(137, 0, 150);
+  color: black;
+  animation-name: rotationTile;
+  animation-duration: 5s;
+}
+
+.flip-box-small-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(-180deg);
+  animation-name: rotationTile;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+.flip-box-small .flip-box-small-inner {
+  animation: runLive 4s infinite;
+}
+
+.backgroundDiv {
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+  height: 100vh;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.space {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+  border: 0px dashed purple;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.stars1 {
+  animation: spaceL 180s ease-in-out infinite;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 125px 20px, rgb(255, 212, 162), rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 15px 125px, rgb(86, 193, 255), rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+
+.stars2 {
+  animation: space 240s ease-in-out infinite;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 199px 100px, rgb(255, 159, 121), rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 100px 5px, rgb(119, 196, 241), rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(0, 204, 255, 0));
+}
+
+.stars3 {
+  animation: space 300s ease-in-out infinite;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 60px 170px, rgb(252, 202, 127), rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 195px 95px, rgb(47, 231, 255), rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+
+@keyframes space {
+  40% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.10;
+  }
+
+  60% {
+    opacity: 0.75;
+  }
+
+  100% {
+    width:100%;
+    height:100%;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spaceL {
+  40% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.10;
+  }
+
+  60% {
+    opacity: 0.75;
+  }
+
+  100% {
+    position: absolute;
+  }
+}

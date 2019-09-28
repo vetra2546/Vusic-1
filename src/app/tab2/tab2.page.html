@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="center">
+    <ion-slides pager="true" [options]="slideOpts" style="position: absolute;width:100%;">
+      <ion-slide>
+        <ion-list id="list">
+          <ion-item><div class="VideoHeader"></div></ion-item>
+        </ion-list>
+          <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)" >
+          <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Breathe in, Breathe out" >
+          </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </ion-slide>
+      <ion-slide>
+        <ion-list id="Musiclist" >
+          <ion-item><div class="MusicHeader"></div></ion-item>
+        </ion-list>
+        <ion-infinite-scroll threshold="100px" (ionInfinite)="loadDataMusic($event)" >
+        </ion-infinite-scroll>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
